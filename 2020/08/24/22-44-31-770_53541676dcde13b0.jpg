@@ -1,0 +1,653 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="http://file.mihanblog.com//public/user_data/user_files/269/805196/ghaleb/favicon.ico.png"/>
+    <title>سیاره لینوکس فارسی</title>
+        <link rel="stylesheet" media="screen" type="text/css" href="custom/style/default.css" title="Default" />
+
+    <link rel="alternate" type="application/atom+xml" title="ATOM" href="?type=atom10" />
+</head>
+
+<body>
+<div class="loader-container" id="page-loader"> 
+	<div class="loading-wrapper"> 
+		<div class="loader-animation" id="loader-animation"> 
+			<span class="loader"> 
+				<span class="loader-inner"></span> 
+			</span> 
+		</div><!-- loader-animation -->
+			<div class="loader-name" id="loader-name"> سیاره لینوکس فارسی </div><!-- loader-name -->
+	</div><!-- loading-wrapper -->
+</div><!-- loader-container -->
+
+    <script type="text/javascript">
+    document.body.className += 'js';
+    </script>
+    <div id="page">
+                <div id="header">
+            <div id="top"><div id="header-links"><h1 style="margin: -2px 0 10px;"><a href="./index.php"><i class="fa fa-globe" aria-hidden="true"></i>  سیاره لینوکس فارسی </a><a href="http://linuxvaman.ir/post/327">ثبت فید</a> </h1></div>
+		<div id="box"><ul id="menu"> <li id="aparat"><a target="_blank" title="آپارات" rel="nofollow" href="http://aparat.com/linuxvaman"></a></li><li id="instagram"><a target="_blank" title="اینستاگرام" href="http://instagram.com/linuxvaman"></a></li><li id="telegram"><a target="_blank" title="تلگرام" href="http://telegram.me/linuxvaman"></a></li><li id="planet"><a target="_blank" title="سیاره لینوکس" href="http://planet.linuxvaman.ir"></a></li><li id="cooperation"><a target="_blank" title="همکاری با ما" href="http://linuxvaman.ir/post/259"></a></li><li id="rss"><a target="_blank" title="rss" href="http://rss.linuxvaman.ir/linuxvaman"></a></li><li id="twitter"><a target="_blank" title="twitter" href="http://twitter.com/linuxvaman"></a></li></ul></div></div>
+
+        </div>
+        
+        <div id="content">
+                                                                    <div class="article jadi-net">
+                        <h2 class="article-title">
+                            <a href="http://feedproxy.google.com/~r/freekeyboard/~3/L8D0dj8k_LI/" title="لینک به مطلب اصلی">رفتگر دبیان و اصلاح خودکار حدود ۶۰ هزار مشکل ریز در پکیج‌ها</a>
+                        </h2>
+                        <p class="article-info">
+                            
+                            <i class="fa fa-user" aria-hidden="true" style="color: #19B4CF !important;"
+			    > </i> نویسنده: جادی                         |  <i class="fa fa-clock-o" aria-hidden="true" style="color: #19B4CF !important;"> </i> زمان: <span id="post1598196284" class="date">23/08/2020</span>                            
+                            |
+                            
+                            <i class="fa fa-link" aria-hidden="true" style="color: #19B4CF !important;"> </i> منبع: <a href="https://jadi.net" class="source">کیبرد آزاد</a>                        </p>
+                        <div class="article-content">
+                            <p><img src="http://jadi.net/wp-content/uploads/2020/08/roftgar.jpg" alt="" width="555" height="370" class="alignnone size-full wp-image-17548" srcset="https://jadi.net/wp-content/uploads/2020/08/roftgar.jpg 555w, https://jadi.net/wp-content/uploads/2020/08/roftgar-300x200.jpg 300w" sizes="(max-width: 555px) 100vw, 555px" /></p>
+<p><a href="https://wiki.debian.org/Janitor">رفتگر دبیان</a> یا همون دبیان جنیتور سیستم اتوماتیکی است برای حل مشکلات ریز در بسته‌هایی که برای مدیر بسته دبیان درست می شن؛ یعنی همون dpkg. این رفتگر به شکل خودکار پیشنهادهای اصلاح رو بررسی می‌کرد و اونهایی که برای نرم افزار هم واضح بودن رو قبول می‌کرد اما حالا یه قدم جلوتر رفته: شخصا مشکلات رو پیدا می‌کنه و بعدش هم اصلاح (:</p>
+<p>این سیستم برای بررسی اینکه باید روی کدوم پکیج‌ها کار کنه، اول خروجی <a href="https://lintian.debian.org/">lintian</a> رو می‌بینه و بسته‌هایی رو انتخاب می‌کنه که مشکلات بیشتر و حادتری دارن که حلش از عهده خودش برمیاد. وقتی پکیج انتخاب شد، اونو توی رپوزیتوری کلون می‌کنه و بعد <a href="https://manpages.debian.org/testing/lintian-brush/lintian-brush.1.en.html">لینتین براش</a> رو روش اجرا می‌کنه. این سیستم شامل یکسری اصلاح کننده است که می‌تونن برای مشکلات مختلفی نوشته و اجرا بشن.</p>
+<p>این اصلاح کننده ها یا فیکسرها، در واقع یکسری کد هستن که روی یک چک آوت تمیز بسته اجرا می‌شن و می‌تونن توش تغییر ایجاد کنن. اکثرا با شل یا پایتون نوشته شدن ولی چون فایل اجرایی هستن، می تونن هر چیزی باشن. اگر فیکسر با استتوس غیرصفر بیرون اومد، حساب می کنه که به مشکل خورده ولی اگر خروجی اش صفر بود، باید گزارشش رو روی خروجی بنویسه. به عنوان یک نمونه از فیکسر این رو ببینین:</p>
+<pre>
+#!/usr/bin/python3
+
+from debmutate.control import ControlEditor
+from lintian_brush.fixer import report_result, fixed_lintian_tag
+
+with ControlEditor() as updater:
+    for para in updater.paragraphs:
+        if para.get("Priority") == "extra":
+            para["Priority"] = "optional"
+            fixed_lintian_tag(
+                para, 'priority-extra-is-replaced-by-priority-optional')
+
+report_result("Change priority extra to priority optional.")</pre>
+<p>این سیستم تا حالا <a href="https://www.jelmer.uk/janitor-update-3.html">حدود ۶۰هزار اصلاح روی پکیج های دبیان زده</a> که به نوبه خودش اتفاق خیلی بزرگی است که قبلا با دست و در مقیاسی بسیار کمتر و کندتر و پر خطاتر انجام می‌شد. این نمونه‌ای است از اینکه چطوری می شه کدها رو اتوماتیک کرد و کارهای دستی رو به ماشین ها سپرد. نگرانی خاصی هم برای «از دست رفتن شغل برنامه نویسی» نیست چون همیشه با اینجور پیشرفت ها، افق های جدیدی باز می شن که ما هنوز توشون لازمه کار کنیم. در واقع در <em>اینجور موارد</em> همون اتفاقی می‌افته که با اختراع تراکتور افتاد. آدم ها بیکار نشدن بلکه کشاورزی راحتتر شدن و بقیه رفتن سراغ چیزهای دیگه (:</p>
+<p>البته بذارین دو نکته رو هم بگم:</p>
+<p>۱. این توضیح در مورد همه اختراعات نیست. واقعا شاید برسیم به جایی که ماشین ها کار کنن ما بخوابیم یا صاحب هامون بخوابن و ما تو خرابه ها دنبال غذا بگردیم (:</p>
+<p>۲. اصطلاح رفتگر اصطلاح قشنگی است. الان مد شده بعضی ها می گن «پاکبان»‌ چون ظاهرا احساس می کنن رفتگر توهین آمیزه. رفتگری هم یه شغله و لازم نیست اگر فکر می کنیم تحقیر کننده است، اسمش رو عوض کنیم که راحت بشیم. اگر فکر می کنین رفتگرها زندگی سختی دارن، بهتره آشغال کمتری روی زمین بریزین، بهشون خوراکی های باحال بدین، باهاشون سلام علیک کنین و &#8230; عوض کردن اسم چیزها مشکلی رو حل نمی کنه (: مگر اینکه بخوایم بگیم پاکبان شمول بیشتری از رفتگر داره (: که قبوله.</p>
+<img src="http://feeds.feedburner.com/~r/freekeyboard/~4/L8D0dj8k_LI" height="1" width="1" alt="" />                        </div>
+                    </div>
+                                                                            <div class="article jadi-net">
+                        <h2 class="article-title">
+                            <a href="http://feedproxy.google.com/~r/freekeyboard/~3/MR1pO84bSeo/" title="لینک به مطلب اصلی">فرصت استخدام دولوپر فرانت، بک، اپ، ری‌اکت،‌وردپرس و طراح رابط کاربری در پیکسولوبیت</a>
+                        </h2>
+                        <p class="article-info">
+                            
+                            <i class="fa fa-user" aria-hidden="true" style="color: #19B4CF !important;"
+			    > </i> نویسنده: جادی                         |  <i class="fa fa-clock-o" aria-hidden="true" style="color: #19B4CF !important;"> </i> زمان: <span id="post1597923066" class="date">20/08/2020</span>                            
+                            |
+                            
+                            <i class="fa fa-link" aria-hidden="true" style="color: #19B4CF !important;"> </i> منبع: <a href="https://jadi.net" class="source">کیبرد آزاد</a>                        </p>
+                        <div class="article-content">
+                            <p><img src="http://jadi.net/wp-content/uploads/2020/08/programmer.png" alt="" width="852" height="480" class="alignnone size-full wp-image-17543" srcset="https://jadi.net/wp-content/uploads/2020/08/programmer.png 852w, https://jadi.net/wp-content/uploads/2020/08/programmer-300x169.png 300w, https://jadi.net/wp-content/uploads/2020/08/programmer-768x433.png 768w" sizes="(max-width: 852px) 100vw, 852px" /></p>
+<p><strong>پیکسلوبیت</strong> شرکتی کوچیک اما چابک و جسوره که از سال ٩۵ مشغول به کار کرده. هدف اصلی ما فعالیت در بازار تولید اپلیکیشنهای وب و موبایل هستش و در تلاشیم که با استفاده از تکنولوژیهای نوین تولیداتی بسیار کارا برای مشتریان خودمون داشته باشیم.</p>
+<p>برای تشکیل یک تیم قوی از دولوپرهای وب و موبایل از همه دوستانی که تخصصهای زیر رو دارن دعوت به همکاری میکنیم :</p>
+<h3>دولوپر ارشد فرانت اند | Senior Front-end Developer</h3>
+<p>• مهارت بالا در Html و CSS<br />
+• مهارت بالا در jQuery و JavaScript<br />
+•تجربه کاری با فریم‌ورکهای ریسپانسیو مثل Bootstrap<br />
+• مهارت بالا در حداقل یک فریم ورک جاوا اسکریپت (مهارت در ReactJs یا AngularJs مزیت محسوب میشه)<br />
+•درک کلی از SEO<br />
+• آشنایی کلی با PHP<br />
+• توانایی کار با ادوبی Photoshop و Illustrator<br />
+• آشنایی با LESS یا SASS مزیت محسوب میشه</p>
+<h3>دولوپر ارشد بک اند | Senior Back-end Developer</h3>
+<p>• مهارت بالا در PHP<br />
+• آشنایی با SQL<br />
+• مهارت کاری با Html و CSS<br />
+• آشنایی کلی با JavaScript<br />
+• مهارت و آشنایی با Laravel مزیت بالایی داره<br />
+• آشنایی با #C وتجربه کار با net. مزیت بالایی داره</p>
+<h3>دولوپر ارشد iOS ودولوپر ارشد SeniorAndroid&amp;iOSDeveloper | Android</h3>
+<p>• مهارت بالا در توسعه اپ موبایل شامل پروسه کلی از ابتدا تا انتشار در استور<br />
+• مهارت در دیباگ و اضافه کردن فانکشنالیتی های جدید به اپ های قدیمی</p>
+<h3>دولوپر ارشد Senior React Native Developer | React Native</h3>
+<p>• آشنایی با پلتفرمهای iOS و Android<br />
+• توانایی بالا در JavaScript و فریمورک React Native<br />
+• آشنایی با جاوا یا swift مزیت محسوب میشه</p>
+<h3>طراح رابط کاربری | UI Designer</h3>
+<p>• رزومه کاری قوی برای ارائه<br />
+• آشنایی سطحی با JavaScript ،html و CSS مزیت محسوب میشه</p>
+<h3>دولوپر وردپرس | WordPress Developer</h3>
+<p>• آشنایی بالا با ساختار WordPress<br />
+• آشنایی بالا Html و CSS<br />
+• آشنایی با JavaScript<br />
+• تجربه در ادیت و شخصی سازی تمپلیت‌های WordPress<br />
+• آشنایی کلی با SEO<br />
+• آشنایی بالا با PHP</p>
+<blockquote><p>در ضمن از دوستانی که تجربه کمتری نسبت به تخصص های بالا دارند و اصطلاحا Junior Developer هستند هم دعوت می‌شه که برای سمت دستیاری دولوپرهای ارشد رزومه خودشون رو بفرستن.</p></blockquote>
+<p>غیر از مهارت های تخصصی که برای هر موقعیت کاری لیست شده برای ما مهمه همکارانمون مهارتهای کلی زیر رو هم داشته باشند:</p>
+<p>• وقت شناس و دقیق<br />
+• طرز تفکر مثبت به چالش‌ها ( نگاه به اینکه کار نشد نداره)<br />
+• اشتیاق به یادگیری تکنولوژی‌های جدید در زمینه تخصصی خودشون که به تیم کمک کنه<br />
+• توانایی عمومی نوشتن و خواندن انگلیسی</p>
+<p>خوشحال بودن اعضا تیم برای ما خیلی مهمه به همین دلیل تمام توانمون رو خواهیم گذاشت که به دور از استرس و خوشحال به کارشون برسن. از مزیتهای کار با ما:</p>
+<p>• مرخصی با حقوق، پاداش، بیمه و دیگر مزایا طبق قوانین وزارت کار<br />
+• پرداخت هزینه اینترنت مربوط به کار<br />
+• دورکاری و اینکه برامون مهم نیست که ساکن تهران باشید اما مهمه که چندین بار در سال برای جلسات ضروری در تهران حاضر باشید</p>
+<h2>کجا رزومه بفرستم؟</h2>
+<p>لطفا رزومه خودتون رو ترجیحا در قالب PDF به HosseinKoofi@gmail.com ارسال کنید. حتما در عنوان ایمیل موقیعت شغلی که مد نظرتونه رو بنویسید.</p>
+<p>مطمئن بشید که شماره همراه و آدرس ایمیل شما به درستی در رزومتون قید شده باشه تا ما به راحتی بتونیم باهاتون تماس بگیریم و قرار مصاحبه آنلاین رو بزاریم.</p>
+<img src="http://feeds.feedburner.com/~r/freekeyboard/~4/MR1pO84bSeo" height="1" width="1" alt="" />                        </div>
+                    </div>
+                                                                            <div class="article pcworms-blog-ir">
+                        <h2 class="article-title">
+                            <a href="http://pcworms.blog.ir/post/%D8%B5%D9%81%D8%AD%D9%87-%D9%87%D8%AF%DB%8C%D9%87-%D8%A8%D8%AF%D9%87%DB%8C%D8%AF-%D9%88%D8%A8%D9%84%D8%A7%DA%AF" title="لینک به مطلب اصلی">صفحه «هدیه بدهید» وبلاگ</a>
+                        </h2>
+                        <p class="article-info">
+                            
+                            <i class="fa fa-user" aria-hidden="true" style="color: #19B4CF !important;"
+			    > </i> نویسنده: فاروق کریمی زاده                         |  <i class="fa fa-clock-o" aria-hidden="true" style="color: #19B4CF !important;"> </i> زمان: <span id="post1597829036" class="date">19/08/2020</span>                            
+                            |
+                            
+                            <i class="fa fa-link" aria-hidden="true" style="color: #19B4CF !important;"> </i> منبع: <a href="http://pcworms.blog.ir/" class="source">کرم های کامپیوتر</a>                        </p>
+                        <div class="article-content">
+                            <div style="direction:rtl"><p>الآن یک صفحه جدید به وبلاگ کرم‌های کامپیوتر به اسم «هدیه بدهید» اضافه شد که از طریق آن میتوانید به نویسنده‌ی مورد نظر خود هدیه بدهید.توجه کنید که هدیه‌ی شما مستقیما و کاملا به نویسنده منتقل می‌شود.</p>
+<h2 style="text-align: center;"><a href="http://pcworms.blog.ir/page/donate" target="_blank">صفحه «هدیه بدهید»</a></h2></div>                        </div>
+                    </div>
+                                                                            <div class="article jadi-net">
+                        <h2 class="article-title">
+                            <a href="http://feedproxy.google.com/~r/freekeyboard/~3/mTk1G-3C5KY/" title="لینک به مطلب اصلی">لینک های شاد دوشنبه‌های آخر ماه – مرداد ۱۳۹۹ – آدم‌های مستقل دست به کار شدن</a>
+                        </h2>
+                        <p class="article-info">
+                            
+                            <i class="fa fa-user" aria-hidden="true" style="color: #19B4CF !important;"
+			    > </i> نویسنده: جادی                         |  <i class="fa fa-clock-o" aria-hidden="true" style="color: #19B4CF !important;"> </i> زمان: <span id="post1597738147" class="date">18/08/2020</span>                            
+                            |
+                            
+                            <i class="fa fa-link" aria-hidden="true" style="color: #19B4CF !important;"> </i> منبع: <a href="https://jadi.net" class="source">کیبرد آزاد</a>                        </p>
+                        <div class="article-content">
+                            <p><img src="http://jadi.net/wp-content/uploads/2020/08/beirut.jpg" alt="" width="500" height="403" class="alignnone size-full wp-image-17536" srcset="https://jadi.net/wp-content/uploads/2020/08/beirut.jpg 500w, https://jadi.net/wp-content/uploads/2020/08/beirut-300x242.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" /></p>
+<ul>
+<li>سه تا دانشجو هم این سیستم خرید دامنه و هاستینگ رو راه انداختن&#8230; سر زدن بهش شاید همه رو خوشحال کنه و شایدم <a href="http://host.helioco.ir/">این سرویس به درد شما هم بخوره</a></li>
+<li>با جیرا آشنا هستین دیگه؟ مجتبی که مدیر محصول است چند تا <a href="https://www.youtube.com/channel/UCwt7fSUCzQgpCNwSM59V9cQ">ویدئوی آموزشی اش رو اینجا گذاشته</a> که شاید به شما ایده‌های جالبتری هم در موردش بده.</li>
+<li>مصطفی هم یه برنامه <a href="https://github.com/mostafavtp/cs_projs/tree/master/DataOnImage">استگانوگرافی</a> نوشته به سی شارپ. برنامه‌ای برای مخفی کردن اطلاعات لابلای بیت‌های یک تصویر.</li>
+<li>برنامه <a href="https://github.com/amis-shokoohi/kapak">کپک هم لوگوی فانی داره هم آزاده</a>. برای رمزنگاری روی فایل‌ها. یه نگاه بکنین شایدم فرصتی شد برای مشارکت و یاد گرفتن.</li>
+<li>شهریار هم یک دوره توی یوتیوب داره که خوبه دیده بشه. دوره جنگوچنلز و سوکت نویسی اش . <a href="https://www.youtube.com/playlist?list=PLRU2zoAmuzJ2GD68st5SinXXv_Gv1lWRm">اینجا می تونین ببینین</a></li>
+<li>
+<ul>
+<li>محمد هم منابعی که برای <a href="https://github.com/mohammadrabetian/backend-developer-university">توسعه دهندگی بک اند</a> رو جمع کرده رو گذاشته اینجا.. لینکش هاش رو (:</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>حامد هم خواسته <a href="https://github.com/H4medRostami/HarvazOTP">این رپوزیتوری گیت هابش رو معرفی کنم</a> که یک اکستنش برای مدیریت پسوردهای یکبار مصرف است. شایدم من اشتباه فهمیدم (: ولی احتمالا خودتون کلیک کنین بهتر می فهمین (:</li>
+</ul>
+</li>
+<li>مهدی هم ی پروژه داره تحت عنوان آپارات-دی-ال. شبیه یوتیوب دی ال که در کامندلاین از یوتیوب دانلود می کنه ولی از آپارات با پایتون و <a href="https://github.com/thisismehdi/aparat-dl">نرم افزار آزاد</a></li>
+<li>مهدی (دیگه ای!) هم یک سی ام اس با جنگو نوشته. شامل دسته بندی و بخش توانایی ها و پادکست و &#8230; <a href="https://github.com/mavenium/PyEditorial">روی گیت هاب</a></li>
+<li>نمی دونم این <a href="https://github.com/Noah1001000/clean-code-persian">ترجمه آزاد از کتاب کد تمیز</a> رو معرفی کرده ام یا نه&#8230; ولی به هرحال منتظر مشارکت شماست (: شایدم خوندن بخش های ترجمه شده.</li>
+<li>علی هم یه پروژه داره  برای به اشتراک گذاشتن کد تایید در حین زمان توسعه. از <a href="https://gitlab.com/molaeiali/dev-code-bot">dev-code</a> می تونین دقیقتر ببینینش.</li>
+<li>علی و دوستانش هم دارن <a href="https://javascript.info/">javascript.info</a> رو ترجمه می‌کنن و اگر دوست دارین کمک کنین <a href="https://github.com/alithecodeguy/persian-javascript.info">رو گیت هاب منتظر شماست</a></li>
+</ul>
+<hr />
+<p>اگر شما هم دوست دارین پروزه تون معرفی بشه و اگر حس می کنین پروژه تون مرتبط است و آزاد و به نفع همه؛ خوبه بهم خبر بدین (:</p>
+<img src="http://feeds.feedburner.com/~r/freekeyboard/~4/mTk1G-3C5KY" height="1" width="1" alt="" />                        </div>
+                    </div>
+                                                                            <div class="article fedorafans-com">
+                        <h2 class="article-title">
+                            <a href="https://fedorafans.com/%D8%AA%D8%B4%D8%AE%DB%8C%D8%B5-%D9%86%D9%88%D8%B9-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D8%B3%D8%A7%D8%B2-%D8%AF%D8%B1-%D9%85%D8%A7%D8%B4%DB%8C%D9%86-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D9%84%DB%8C%D9%86%D9%88/" title="لینک به مطلب اصلی">تشخیص نوع مجازی ساز در ماشین مجازی لینوکس</a>
+                        </h2>
+                        <p class="article-info">
+                            
+                            <i class="fa fa-user" aria-hidden="true" style="color: #19B4CF !important;"
+			    > </i> نویسنده: hos7ein                         |  <i class="fa fa-clock-o" aria-hidden="true" style="color: #19B4CF !important;"> </i> زمان: <span id="post1597645838" class="date">17/08/2020</span>                            
+                            |
+                            
+                            <i class="fa fa-link" aria-hidden="true" style="color: #19B4CF !important;"> </i> منبع: <a href="http://fedorafans.com" class="source">طرفداران فدورا</a>                        </p>
+                        <div class="article-content">
+                            <div style="margin-bottom:20px;"><img width="945" height="400" src="https://fedorafans.com/wp-content/uploads/2020/04/Pencil-fedorafans.com_.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Pencil" loading="lazy" srcset="https://fedorafans.com/wp-content/uploads/2020/04/Pencil-fedorafans.com_.jpg 945w, https://fedorafans.com/wp-content/uploads/2020/04/Pencil-fedorafans.com_-300x127.jpg 300w, https://fedorafans.com/wp-content/uploads/2020/04/Pencil-fedorafans.com_-768x325.jpg 768w" sizes="(max-width: 945px) 100vw, 945px" /></div><p>امروزه انواع گوناگونی <a href="https://fedorafans.com/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%81%D8%B9%D8%A7%D9%84-%DA%A9%D8%B1%D8%AF%D9%86-nested-virtualization-%D8%AF%D8%B1-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D8%B3%D8%A7%D8%B2-kvm/">مجازی ساز</a> یا همان <a href="https://fedorafans.com/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%86%D8%B5%D8%A8-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D8%B3%D8%A7%D8%B2-kvm-%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%D9%81%D8%AF%D9%88%D8%B1%D8%A7-%DB%B3%DB%B2/">Hypervisor</a> وجود دارد که هر کدام دارای ویژگی های خود می باشند. شاید شما به یک سرور دسترسی داشته باشید و بخواهید بدانید که سرور مورد نظر یک سرور فیزیکی (bare-metal) است یا یک سرور مجازی (VPS)، و اگر سرور مجازی است، نوع مجازی ساز آن چیست؟</p>
+<p><span id="more-6876"></span></p>
+<p>برای تشخیص این که نوع سرور و مجازی ساز آن چیست، روش ها و ابزارهای گوناگونی وجود دارد که در این مطلب سعی خواهد شد به چند روش از آنها اشاره کنیم.</p>
+<p><a href="https://fedorafans.com/wp-content/uploads/2020/04/Pencil-fedorafans.com_.jpg"><img loading="lazy" class="aligncenter size-full wp-image-6911" src="https://fedorafans.com/wp-content/uploads/2020/04/Pencil-fedorafans.com_.jpg" alt="Pencil" width="945" height="400" srcset="https://fedorafans.com/wp-content/uploads/2020/04/Pencil-fedorafans.com_.jpg 945w, https://fedorafans.com/wp-content/uploads/2020/04/Pencil-fedorafans.com_-300x127.jpg 300w, https://fedorafans.com/wp-content/uploads/2020/04/Pencil-fedorafans.com_-768x325.jpg 768w" sizes="(max-width: 945px) 100vw, 945px" /></a></p>
+<h4>روش ۱ :</h4>
+<p>یکی از روش های تشخیص نوع <a href="https://fedorafans.com/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%81%D8%B9%D8%A7%D9%84-%DA%A9%D8%B1%D8%AF%D9%86-nested-virtualization-%D8%AF%D8%B1-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D8%B3%D8%A7%D8%B2-virtualbox/">مجازی ساز</a> سرور استفاده از نرم افزار خط فرمانی virt-what می باشد که در واقع یک <a href="https://fedorafans.com/%D9%85%D8%AD%D8%A7%D8%B3%D8%A8%D9%87-%D8%AD%D8%AC%D9%85-%D9%81%D8%A7%DB%8C%D9%84-%D9%87%D8%A7-%D8%A8%D8%A7-shell-script/">Shell script</a> می باشد که بوسیله ی آن می توانیم نوع سرور و نوع Hypervisor را تشخیص دهیم. ابزار virt-what قادر است تا رنج وسعی از <a href="https://fedorafans.com/%D9%88%DB%8C%DA%98%DA%AF%DB%8C-nested-virtualization-%D8%AF%D8%B1-%D8%AF%D9%86%DB%8C%D8%A7%DB%8C-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D8%B3%D8%A7%D8%B2%D9%87%D8%A7/">مجازی سازها</a> مانند <a href="https://fedorafans.com/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%86%D8%B5%D8%A8-%D9%88-%D9%BE%DB%8C%DA%A9%D8%B1%D8%A8%D9%86%D8%AF%DB%8C-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D8%B3%D8%A7%D8%B2-kvm/">KVM</a>, Microsoft Hyper-V, <a href="https://fedorafans.com/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%86%D8%B5%D8%A8-%D9%88-%D9%BE%DB%8C%DA%A9%D8%B1%D8%A8%D9%86%D8%AF%DB%8C-docker-swarm-%D8%A8%D8%AE%D8%B4-%DB%B1/">Docker</a>, OpenVZ, <a href="https://fedorafans.com/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%86%D8%B5%D8%A8-%D9%88-%D9%BE%DB%8C%DA%A9%D8%B1%D8%A8%D9%86%D8%AF%DB%8C-lxc-%D8%AF%D8%B1-ubuntu-14-04/">LXC</a>, <a href="https://fedorafans.com/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%86%D8%B5%D8%A8-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D8%B3%D8%A7%D8%B2-virtualbox-6-1-%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%D9%81%D8%AF%D9%88%D8%B1%D8%A7/">VirtualBox</a>, Xen, <a href="https://fedorafans.com/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-deploy-%DA%A9%D8%B1%D8%AF%D9%86-%D9%85%D8%A7%D8%B4%DB%8C%D9%86-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D8%AF%D8%B1-vmware-%D8%A8%D8%A7-ansible/">VMware</a> و بسیاری دیگر از مجازی ساز ها را تشخیص دهد.</p>
+<p><strong>نصب virt-what در لینوکس فدورا و CentOS :</strong></p>
+<p>برای نصب virt-what کافیست تا دستور زیر را وارد کنید:</p>
+<blockquote>
+<p dir="ltr" style="text-align: left;"># dnf install virt-what</p>
+</blockquote>
+<p>اگر از <a href="https://fedorafans.com/%D9%86%D8%B3%D8%AE%D9%87-%D9%86%D9%87%D8%A7%DB%8C%DB%8C-%D8%AA%D9%88%D8%B2%DB%8C%D8%B9-linux-centos-8-2-2004-%D9%85%D9%86%D8%AA%D8%B4%D8%B1-%D8%B4%D8%AF/">CentOS</a> سری ۷ و یا ۶ استفاده می کنید کافیست تا دستور زیر را اجرا کنید:</p>
+<blockquote>
+<p dir="ltr" style="text-align: left;"># yum install virt-what</p>
+</blockquote>
+<p>&nbsp;</p>
+<p><strong>نصب virt-what در لینوکس دبیان و اوبونتو:</strong></p>
+<p>برای اینکار کافیست تا دستور زیر را اجرا کنید:</p>
+<blockquote>
+<p dir="ltr" style="text-align: left;"># apt-get install virt-what</p>
+</blockquote>
+<p>پس از نصب برنامه ی virt-what اکنون کافیست تا دستور زیر را با کاربر <a href="https://fedorafans.com/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%85%D8%AD%D8%AF%D9%88%D8%AF-%DA%A9%D8%B1%D8%AF%D9%86-%D8%AF%D8%B3%D8%AA%D8%B1%D8%B3%DB%8C-%D8%A8%D9%87-%D8%B3%D8%B1%D9%88%DB%8C%D8%B3-ssh/">root</a> اجرا کنید:</p>
+<blockquote>
+<p dir="ltr" style="text-align: left;"># virt-what</p>
+</blockquote>
+<p>پس از اجرای دستور گفته شده، نوع مجازی سازی که آن <a href="https://fedorafans.com/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%A7%D8%AC%D8%B1%D8%A7%DB%8C-%D8%A2%D9%86%D8%AF%D8%B1%D9%88%DB%8C%D8%AF-%DB%B4-%D8%AF%D8%B1-%D9%85%D8%A7%D8%B4%DB%8C%D9%86-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C/">ماشین مجازی</a> (<a href="https://fedorafans.com/%D8%A7%D8%B6%D8%A7%D9%81%D9%87-%DA%A9%D8%B1%D8%AF%D9%86-%D9%87%D8%A7%D8%B1%D8%AF-%D8%AF%DB%8C%D8%B3%DA%A9-%D8%AC%D8%AF%DB%8C%D8%AF-%D8%A8%D9%87-vm-%D8%A8%D8%AF%D9%88%D9%86-%D9%86%DB%8C%D8%A7%D8%B2/">VM</a>) بر روی آن اجرا شده است را نمایش خواهد داد. اگر در خروجی دستور چیزی نمایش داده نشد، به این معنی می باشد که سرور مورد نظر یک سرور فیزیکی (bare-metal) می باشد یا اینکه برنامه نوع مجازی ساز (Hypervisor) را تشخیص نداده است.</p>
+<p>برای اطلاعات بیشتر در مورد نرم افزار virt-what  می توانید راهنمای آن را مطالعه کنید:</p>
+<blockquote>
+<p dir="ltr" style="text-align: left;">$ man virt-what</p>
+</blockquote>
+<p>در ادامه چند نمونه تصویر از اجرای دستور virt-what را بر روی سرورهای گوناگون مشاهده می کنید:</p>
+<p><a href="https://fedorafans.com/wp-content/uploads/2020/04/1-virt-what-fedorafans.com_.png"><img loading="lazy" class="aligncenter size-full wp-image-6878" src="https://fedorafans.com/wp-content/uploads/2020/04/1-virt-what-fedorafans.com_.png" alt="virt-what" width="304" height="74" srcset="https://fedorafans.com/wp-content/uploads/2020/04/1-virt-what-fedorafans.com_.png 304w, https://fedorafans.com/wp-content/uploads/2020/04/1-virt-what-fedorafans.com_-300x73.png 300w" sizes="(max-width: 304px) 100vw, 304px" /></a></p>
+<p><a href="https://fedorafans.com/wp-content/uploads/2020/04/2-virt-what-fedorafans.com_.png"><img loading="lazy" class="aligncenter size-full wp-image-6879" src="https://fedorafans.com/wp-content/uploads/2020/04/2-virt-what-fedorafans.com_.png" alt="virt-what" width="279" height="57" /></a></p>
+<p><a href="https://fedorafans.com/wp-content/uploads/2020/04/3-virt-what-fedorafans.com_.png"><img loading="lazy" class="aligncenter size-full wp-image-6880" src="https://fedorafans.com/wp-content/uploads/2020/04/3-virt-what-fedorafans.com_.png" alt="virt-what" width="404" height="59" srcset="https://fedorafans.com/wp-content/uploads/2020/04/3-virt-what-fedorafans.com_.png 404w, https://fedorafans.com/wp-content/uploads/2020/04/3-virt-what-fedorafans.com_-300x44.png 300w" sizes="(max-width: 404px) 100vw, 404px" /></a></p>
+<h4>روش ۲ :</h4>
+<p>یکی دیگر از روش های تشخیص نوع مجازی ساز یک <a href="https://fedorafans.com/%D8%B4%D8%B1%D9%88%D8%B9-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D8%B3%D8%A7%D8%B2%DB%8C-%D8%A8%D8%A7-gnome-boxes/">ماشین مجازی</a> استفاده از دستور زیر می باشد:</p>
+<blockquote>
+<p dir="ltr" style="text-align: left;">$ systemd-detect-virt</p>
+</blockquote>
+<p>برای اطلاعات بیشتر در مورد این دستور کافیست تا راهنمای آن را مطالعه کنید:</p>
+<blockquote>
+<p dir="ltr" style="text-align: left;">$ man systemd-detect-virt</p>
+</blockquote>
+<pre class="brush: php; title: ; notranslate">$ systemd-detect-virt --help</pre>
+<p>&nbsp;</p>
+<p>در ادامه چند نمونه از خروجی اجرای دستور گفته شده را بر روی سرورهای مجازی مختلف مشاهده می کنید:</p>
+<p><a href="https://fedorafans.com/wp-content/uploads/2020/04/1-systemd-detect-virt-fedorafans.com_.png"><img loading="lazy" class="aligncenter size-full wp-image-6881" src="https://fedorafans.com/wp-content/uploads/2020/04/1-systemd-detect-virt-fedorafans.com_.png" alt="systemd-detect-virt" width="381" height="59" srcset="https://fedorafans.com/wp-content/uploads/2020/04/1-systemd-detect-virt-fedorafans.com_.png 381w, https://fedorafans.com/wp-content/uploads/2020/04/1-systemd-detect-virt-fedorafans.com_-300x46.png 300w" sizes="(max-width: 381px) 100vw, 381px" /></a></p>
+<p><a href="https://fedorafans.com/wp-content/uploads/2020/04/2-systemd-detect-virt-fedorafans.com_.png"><img loading="lazy" class="aligncenter size-full wp-image-6882" src="https://fedorafans.com/wp-content/uploads/2020/04/2-systemd-detect-virt-fedorafans.com_.png" alt="systemd-detect-virt" width="374" height="58" srcset="https://fedorafans.com/wp-content/uploads/2020/04/2-systemd-detect-virt-fedorafans.com_.png 374w, https://fedorafans.com/wp-content/uploads/2020/04/2-systemd-detect-virt-fedorafans.com_-300x47.png 300w, https://fedorafans.com/wp-content/uploads/2020/04/2-systemd-detect-virt-fedorafans.com_-368x58.png 368w" sizes="(max-width: 374px) 100vw, 374px" /></a></p>
+<p><a href="https://fedorafans.com/wp-content/uploads/2020/04/3-systemd-detect-virt-fedorafans.com_.png"><img loading="lazy" class="aligncenter size-full wp-image-6883" src="https://fedorafans.com/wp-content/uploads/2020/04/3-systemd-detect-virt-fedorafans.com_.png" alt="systemd-detect-virt" width="484" height="60" srcset="https://fedorafans.com/wp-content/uploads/2020/04/3-systemd-detect-virt-fedorafans.com_.png 484w, https://fedorafans.com/wp-content/uploads/2020/04/3-systemd-detect-virt-fedorafans.com_-300x37.png 300w" sizes="(max-width: 484px) 100vw, 484px" /></a></p>
+<h4>روش ۳ :</h4>
+<p>روش دیگر برای تشخیص نوع <a href="https://fedorafans.com/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%81%D8%B9%D8%A7%D9%84-%DA%A9%D8%B1%D8%AF%D9%86-nested-virtualization-%D8%AF%D8%B1-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D8%B3%D8%A7%D8%B2-virtualbox/">مجازی ساز</a> (Hypervisor) یک ماشین مجازی (<a href="https://fedorafans.com/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-deploy-%DA%A9%D8%B1%D8%AF%D9%86-%D9%85%D8%A7%D8%B4%DB%8C%D9%86-%D9%85%D8%AC%D8%A7%D8%B2%DB%8C-%D8%AF%D8%B1-vmware-%D8%A8%D8%A7-ansible/">VM</a>) استفاده از دستور dmidecode می باشد که به صورت یک تکه کد <a href="https://fedorafans.com/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%DA%A9%D8%A7%D9%85%D9%86%D8%AA-%DA%A9%D8%B1%D8%AF%D9%86-%DA%86%D9%86%D8%AF-%D8%AE%D8%B7-%D8%AF%D8%B1-%D8%B4%D9%84-%D8%A7%D8%B3%DA%A9%D8%B1%DB%8C%D9%BE%D8%AA/">شل اسکریپت</a> می توان از آن استفاده کرد:</p>
+<blockquote>
+<p dir="ltr" style="text-align: left;">for i in system-manufacturer system-product-name<br />
+do<br />
+sudo dmidecode -s $i<br />
+done</p>
+</blockquote>
+<p>یا اینکه می توانید دستور را در یک خط به صورت زیر اجرا کنید:</p>
+<blockquote>
+<p dir="ltr" style="text-align: left;"># for i in system-manufacturer system-product-name; do sudo dmidecode -s $i; done</p>
+</blockquote>
+<p>در ادامه چند تصویر از اجرای دستورهای گفته شده بر روی ماشین های مجازی مختلف مشاهده می کنید:</p>
+<p><a href="https://fedorafans.com/wp-content/uploads/2020/04/1-dmidecode-fedorafans.com_.png"><img loading="lazy" class="aligncenter size-full wp-image-6884" src="https://fedorafans.com/wp-content/uploads/2020/04/1-dmidecode-fedorafans.com_.png" alt="dmidecode" width="637" height="124" srcset="https://fedorafans.com/wp-content/uploads/2020/04/1-dmidecode-fedorafans.com_.png 637w, https://fedorafans.com/wp-content/uploads/2020/04/1-dmidecode-fedorafans.com_-300x58.png 300w" sizes="(max-width: 637px) 100vw, 637px" /></a></p>
+<p><a href="https://fedorafans.com/wp-content/uploads/2020/04/2-dmidecode-fedorafans.com_.png"><img loading="lazy" class="aligncenter size-full wp-image-6885" src="https://fedorafans.com/wp-content/uploads/2020/04/2-dmidecode-fedorafans.com_.png" alt="dmidecode" width="638" height="128" srcset="https://fedorafans.com/wp-content/uploads/2020/04/2-dmidecode-fedorafans.com_.png 638w, https://fedorafans.com/wp-content/uploads/2020/04/2-dmidecode-fedorafans.com_-300x60.png 300w" sizes="(max-width: 638px) 100vw, 638px" /></a></p>
+<p><a href="https://fedorafans.com/wp-content/uploads/2020/04/3-dmidecode-fedorafans.com_.png"><img loading="lazy" class="aligncenter size-full wp-image-6886" src="https://fedorafans.com/wp-content/uploads/2020/04/3-dmidecode-fedorafans.com_.png" alt="dmidecode" width="1069" height="80" srcset="https://fedorafans.com/wp-content/uploads/2020/04/3-dmidecode-fedorafans.com_.png 1069w, https://fedorafans.com/wp-content/uploads/2020/04/3-dmidecode-fedorafans.com_-300x22.png 300w, https://fedorafans.com/wp-content/uploads/2020/04/3-dmidecode-fedorafans.com_-1024x77.png 1024w, https://fedorafans.com/wp-content/uploads/2020/04/3-dmidecode-fedorafans.com_-768x57.png 768w" sizes="(max-width: 1069px) 100vw, 1069px" /></a></p>
+<p>همانطور که مشاهده کردید در این مطلب سه روش برای تشخیص نوع سرور و مجازی ساز معرفی شد. بی شک روش ها و نرم افزارهای مختلف دیگری وجود دارد که می توان از آنها برای این منظور استفاده کرد.</p>
+<p>آیا شما تا به حال از روش های معرفی شده در این مطلب استفاده کرده اید؟ یا اینکه شما از نرم افزارها و ابزارهای دیگری برای اینکار استفاده می کنید؟ دیدگاه و تجربه ی خود را با ما به اشتراک بگذارید.</p>
+<p>&nbsp;</p>                        </div>
+                    </div>
+                                                                            <div class="article jadi-net">
+                        <h2 class="article-title">
+                            <a href="http://feedproxy.google.com/~r/freekeyboard/~3/A0x2W_b-2fo/" title="لینک به مطلب اصلی">موزیلا با کم کردن ۲۵۰ نفر از کارمندان، دنبال تمرکز جدید و راه‌های درآمدزایی جدیدی می‌گرده</a>
+                        </h2>
+                        <p class="article-info">
+                            
+                            <i class="fa fa-user" aria-hidden="true" style="color: #19B4CF !important;"
+			    > </i> نویسنده: جادی                         |  <i class="fa fa-clock-o" aria-hidden="true" style="color: #19B4CF !important;"> </i> زمان: <span id="post1597215643" class="date">12/08/2020</span>                            
+                            |
+                            
+                            <i class="fa fa-link" aria-hidden="true" style="color: #19B4CF !important;"> </i> منبع: <a href="https://jadi.net" class="source">کیبرد آزاد</a>                        </p>
+                        <div class="article-content">
+                            <p><img src="http://jadi.net/wp-content/uploads/2014/04/mozilla.png" alt="" class="alignnone size-full wp-image-10648" srcset="https://jadi.net/wp-content/uploads/2014/04/mozilla.png 400w, https://jadi.net/wp-content/uploads/2014/04/mozilla-300x214.png 300w" sizes="(max-width: 400px) 100vw, 400px" /></p>
+<p>بنیاد موزیلا در وبلاگش <a href="https://blog.mozilla.org/blog/2020/08/11/changing-world-changing-mozilla/">اعلام کرده که</a> با کم کردن ۲۵۰ نفر از نیروهاش &#8211; یعنی تقریبا یک چهارم نیروی کارش &#8211; تمرکزش رو بیشتر به سمتی می‌بره که درآمد زا است. این خبر کمی مشکوک برای دنیای آزاده. موزیلا همیشه یکی از شرکت‌های پر تلاش برای اینترنت و آزادی‌ها و سرویس‌هاش بوده ولی ظاهرا در دوران همه‌گیری و افول اقتصاد ناشی از اون (و البته ناشی از چیزهای دیگه)، بنا به گفته مدیرعاملش دیگه نمی‌تونه در این دوران به فعالیت‌های پیشاکرونایی‌اش ادامه بده و باید تمرکزش رو تغییر بده.</p>
+<p>چند ماه قبل هم موزیلا ۷۰ کارمند دیگه رو اخراج کرده بود و حالا دفتر تایوان‌اش هم بسته خواهد شد. در این اطلاعیه اومده که موزیلا تمرکزش رو روی چند موضوع خاص خواهد گذاشت که باعث پیشرفت شرکت بشن. از جمله ساختن جامعه قوی‌تر، ساختن محصولاتی که مردم بهش علاقمند باشن و به طور خاص ایجاد جریان‌های درآمدی جدید. در حال حاضر بیشترین درآمد موزیلا از شرکت‌هایی است که برای دریافت سرچ از براوزر موزیلا، بهش پول می‌دن.</p>
+<p>محصولاتی جدید که بهشون اشاره شده، پاکت برای خوندن مطالب ذخیره شده است و سرویس وی پی ان اختصاصی موزیلا، همچنین چت روم های مجهز به واقعیت مجازی و ابزارهایی برای امنیت و خلوت (پرایوسی). همونطور که گفتم موزیلا یکی از پیشروترین شرکت ها در حقوق دیجیتال و آزادی‌های نرم افزاری بوده و هست و یکی از اولین آلترناتیوهای آزادی ک برنامه تجاری رو ارائه داد که باعث شد عموم مردم متوجه بشن که نرم افزار آزاد می تونه از نمونه‌های تجاری اش بسیار بهتر باشه. اما در طول دهه گذشته تجربه این شرکت خیلی خوب نبوده و احتمالا این کوچیک شدن سایز اجتناب ناپذیر بود اما امیدواریم که نتایجش برای همه ما خوب باشه.</p>
+<img src="http://feeds.feedburner.com/~r/freekeyboard/~4/A0x2W_b-2fo" height="1" width="1" alt="" />                        </div>
+                    </div>
+                                                                            <div class="article jadi-net">
+                        <h2 class="article-title">
+                            <a href="http://feedproxy.google.com/~r/freekeyboard/~3/fupJ45lYZEQ/" title="لینک به مطلب اصلی">رادیوگیک ۱۰۱ – اعترافات مارکوس هاچینز ، هکری که اینترنت را نجات داد</a>
+                        </h2>
+                        <p class="article-info">
+                            
+                            <i class="fa fa-user" aria-hidden="true" style="color: #19B4CF !important;"
+			    > </i> نویسنده: جادی                         |  <i class="fa fa-clock-o" aria-hidden="true" style="color: #19B4CF !important;"> </i> زمان: <span id="post1597058708" class="date">10/08/2020</span>                            
+                            |
+                            
+                            <i class="fa fa-link" aria-hidden="true" style="color: #19B4CF !important;"> </i> منبع: <a href="https://jadi.net" class="source">کیبرد آزاد</a>                        </p>
+                        <div class="article-content">
+                            <p>توی این شماره از رادیوگیک، به سراغ داستان هکری می‌ریم که خوبه شنیده بشه: مارکوس هاچینز. کسی که از یه زندگی روستایی ساده شروع کرد ولی به زودی پاش به زیرزمین‌های تاریک و نمور باز شد. کسی که از اتاق خوابش اینترنت رو نجات داد؛ ولی اف بی آی بالاخره دستگیرش کرد؛ اونهم بعد از یک هفته پارتی سنگین! داستان مارکوس هاچینز رو بشنوین!</p>
+<p>‏<audio  style="width: 100%" pre-load="none" controls="controls"><source src="https://jadi.net/audio/jadi-net_radio-geek_101_Marcus_Hutchins.mp3" type="audio/mp3" /></source>متاسفانه براوزر شما از اچ تی ام ال ۵ پشتیبانی نمی کند. یا خیلی باحال است یا خیلی عجیب!</audio></p>
+<p>‏- <a href="https://jadi.net/audio/jadi-net_radio-geek_101_Marcus_Hutchins.mp3">دانلود نسخه ام پی تری</a></p>
+<p>‏</p>
+<h2>با این لینک‌ها مشترک رادیوگیک بشین</h2>
+<p>‏- <a href="https://feeds.feedburner.com/radiojadi">آر اس اس فید برنر</a><br />
+‏- <a href="https://telegram.me/jadiradio">کانال تلگرام</a><br />
+‏- <a href="https://podcasts.apple.com/us/podcast/%D9%BE%D8%A7%D8%AF%DA%A9%D8%B3%D8%AA-%D8%AC%D8%A7%D8%AF%DB%8C-%D8%AF%D8%A7%D8%AA-%D9%86%D8%AA-%DA%A9%DB%8C%D8%A8%D8%B1%D8%AF-%D8%A2%D8%B2%D8%A7%D8%AF/id517502604">پادکست در آیتونز</a><br />
+‏- <a href="https://soundcloud.com/jadijadi">ساوند کلاود</a><br />
+‏- <a href="https://www.dropbox.com/sh/s7npgs4rp1n7uq4/AADmuC5HZ9zdycboYWr6R2Ena?dl=0">فولدر دراپ باکس </a><br />
+&#8211; پادسکت در استیچر:  <a href="https://www.stitcher.com/podcast/radio-geek">https://www.stitcher.com/podcast/radio-geek</a><br />
+&#8211; یا توی برنامه های پادکست دنبال «کیبرد آزاد» یا «جادی» یا «رادیوگیک» یا jadi یا radiogeek بگردین. هر کسی رادیوگیک رو پیدا نمی کنه، شانس می خواد (:</p>
+<p>و البته ایده جدید:</p>
+<ul>
+<li><a href="https://www.aparat.com/playlist/221661">رادیوگیک در آپارات</a></li>
+<li><a href="https://www.youtube.com/watch?v=Kvfek2BFzRU&amp;list=PL-tKrPVkKKE1peHomci9EH7BmafxdXKGn">رادیوگیک در یوتیوب</a></li>
+</ul>
+<figure id="attachment_17526" aria-describedby="caption-attachment-17526" style="width: 800px" class="wp-caption alignnone"><img src="http://jadi.net/wp-content/uploads/2020/08/marcus.jpg" alt="" width="800" height="534" class="size-full wp-image-17526" srcset="https://jadi.net/wp-content/uploads/2020/08/marcus.jpg 800w, https://jadi.net/wp-content/uploads/2020/08/marcus-300x200.jpg 300w, https://jadi.net/wp-content/uploads/2020/08/marcus-768x513.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" /><figcaption id="caption-attachment-17526" class="wp-caption-text">Marcus Hutchins, digital security researcher for Kryptos Logic, poses for a photograph in front of his computer in his bedroom in Ilfracombe, U.K., on Tuesday, July 4, 2017. Hutchins, the 23-year-old who saved the world from a devastating cyberattack in May was asleep in his bed in the English seaside town of Ilfracombe last week after a night of partying when another online extortion campaign spread across the globe. Photographer: Chris Ratcliffe/Bloomberg via Getty Images</figcaption></figure>
+<h2>اعترافات مارکوس هاچینز ، هکری که اینترنت را نجات داد</h2>
+<p>این شماره در واقع ترجمه ای است از مطلب <a href="https://www.wired.com/story/confessions-marcus-hutchins-hacker-who-saved-the-internet/">وایرد به همین نام</a>. در مورد هکری که در 22 سالگی ، به تنهایی جلوی بدترین حمله سایبری را که جهان تا به حال دیده بود متوقف کرد و بعد وی توسط اف بی آی دستگیر شد. حالا قصه اش رو می شنویم.</p>
+<h3>موسیقی</h3>
+<ul>
+<li>ما از ابی</li>
+<li>[کاور کیهان از تو میتونی])https://soundcloud.com/keyhan-a/to-mitooni)</li>
+<li>PERFECT from Ed Sheeran</li>
+<li>marg.dar.esfahan.asare.siavash.hakim</li>
+<li>Dara-Erfan-Ye-Chi-Beyneshe-(Ft-Gdaal)-320-From Reza</li>
+<li>حیدو &#8211; قطار خالی</li>
+<li>موزیک آخر:  نعیم &#8211; چه بیهوده چه سا ده</li>
+</ul>
+<img src="http://feeds.feedburner.com/~r/freekeyboard/~4/fupJ45lYZEQ" height="1" width="1" alt="" />                        </div>
+                    </div>
+                                                                            <div class="article jadi-net">
+                        <h2 class="article-title">
+                            <a href="http://feedproxy.google.com/~r/freekeyboard/~3/llnaPs0pccY/" title="لینک به مطلب اصلی">آلودگی ارتش آمریکا از مجموع آلودگی کل ۱۰۰ کشور دیگه بیشتر</a>
+                        </h2>
+                        <p class="article-info">
+                            
+                            <i class="fa fa-user" aria-hidden="true" style="color: #19B4CF !important;"
+			    > </i> نویسنده: جادی                         |  <i class="fa fa-clock-o" aria-hidden="true" style="color: #19B4CF !important;"> </i> زمان: <span id="post1596542021" class="date">04/08/2020</span>                            
+                            |
+                            
+                            <i class="fa fa-link" aria-hidden="true" style="color: #19B4CF !important;"> </i> منبع: <a href="https://jadi.net" class="source">کیبرد آزاد</a>                        </p>
+                        <div class="article-content">
+                            <p><img src="http://jadi.net/wp-content/uploads/2020/08/sr71.jpg" alt="" width="1600" height="1176" class="alignnone size-full wp-image-17522" srcset="https://jadi.net/wp-content/uploads/2020/08/sr71.jpg 1600w, https://jadi.net/wp-content/uploads/2020/08/sr71-300x221.jpg 300w, https://jadi.net/wp-content/uploads/2020/08/sr71-1024x753.jpg 1024w, https://jadi.net/wp-content/uploads/2020/08/sr71-768x564.jpg 768w, https://jadi.net/wp-content/uploads/2020/08/sr71-1536x1129.jpg 1536w" sizes="(max-width: 1600px) 100vw, 1600px" /></p>
+<p>جای‌پای کربن ارتش آمریکا در محیط زیست <strong>عظیم</strong>‌ است. این ارتش هم مثل شبکه تامین شرکت‌های بزرگ شدیدا وابسته به حمل و نقل است از جمله کشتی‌ها، کامیون‌ها و هواپیماهای باربری که از بمب تا مواد غذایی برای آدم‌های درگیر در مناطق جنگی رو جابجا می‌کنن. <a href="https://rgs-ibg.onlinelibrary.wiley.com/journal/14755661">یک تحقیق جدید</a> میزان آلودگی کربنی این حجم عظیم حمل و نقل رو محاسبه کرده.</p>
+<p>گازهای گلخانه‌ای معمولا روی میزان آلودگی شرکت‌ها و آدم‌ها تمرکز می‌کنن اما اخیرا محاسبه‌های مختلفی نشون دادن که ارتش آمریکا یکی از آلوده‌ کننده‌ترین‌های کل تاریخ جهان است که میزان مصرف سوخت مایع و تولید گازهای مضرش بیشتر از اکثر کشورها با اندازه متوسط است. اگر این ارتش یک کشور مستقل بود، توی رده بندی آلوده کنندگی می‌تونست ۴۶مین کشور تولید کننده گازهای گلخانه‌ای جهان باشه؛ بین پرو و پرتغال.</p>
+<p>در ۲۰۱۷، این ارتش تقریبا روزانه ۲۶۹هزار بشکه نفت سوزونده که باعث اضافه کردن ۲۵هزار کیلو تن دی اکسید کربن به اتمسفر زمین شده. هزینه خرید این سوخت برای نیروی هوایی نزدیک ۵ میلیارد دلار و برای نیروی دریایی ۲.۸ میلیارد دلار بوده.</p>
+<p>این اطلاعات بر اساس «حق دسترسی آزاد به اطلاعات» به دست اومده که بر طبق اون هر کس حق داره اطلاعات غیرطبقه بندی شده ای که می خواد در موردشون بدونه رو از دولت درخواست کنه. شاید گفتن این هم جالب باشه که آمریکا به شدت مخالف گنجوندن بندی برای گزارش ساطع کردن گازهای مضر ارتش در پروتکل مرتبط ۱۹۹۷ کیوتو بوده ولی بعدا توی معاعده پاریس این رو پذیرفت.</p>
+<img src="http://feeds.feedburner.com/~r/freekeyboard/~4/llnaPs0pccY" height="1" width="1" alt="" />                        </div>
+                    </div>
+                                                                            <div class="article fedorafans-com">
+                        <h2 class="article-title">
+                            <a href="https://fedorafans.com/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%86%D8%B5%D8%A8-%D9%88-%D9%BE%DB%8C%DA%A9%D8%B1%D8%A8%D9%86%D8%AF%DB%8C-docker-swarm-%D8%A8%D8%AE%D8%B4-%DB%B7/" title="لینک به مطلب اصلی">آموزش نصب و پیکربندی Docker Swarm – بخش ۷</a>
+                        </h2>
+                        <p class="article-info">
+                            
+                            <i class="fa fa-user" aria-hidden="true" style="color: #19B4CF !important;"
+			    > </i> نویسنده: hos7ein                         |  <i class="fa fa-clock-o" aria-hidden="true" style="color: #19B4CF !important;"> </i> زمان: <span id="post1596522623" class="date">04/08/2020</span>                            
+                            |
+                            
+                            <i class="fa fa-link" aria-hidden="true" style="color: #19B4CF !important;"> </i> منبع: <a href="http://fedorafans.com" class="source">طرفداران فدورا</a>                        </p>
+                        <div class="article-content">
+                            <div style="margin-bottom:20px;"><img width="443" height="500" src="https://fedorafans.com/wp-content/uploads/2019/10/0-docker-swarm-fedorafans.com_.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="docker-swarm" loading="lazy" srcset="https://fedorafans.com/wp-content/uploads/2019/10/0-docker-swarm-fedorafans.com_.png 443w, https://fedorafans.com/wp-content/uploads/2019/10/0-docker-swarm-fedorafans.com_-266x300.png 266w" sizes="(max-width: 443px) 100vw, 443px" /></div><p>در ادامه ی سلسه مطلب <a href="https://fedorafans.com/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%86%D8%B5%D8%A8-%D9%88-%D9%BE%DB%8C%DA%A9%D8%B1%D8%A8%D9%86%D8%AF%DB%8C-docker-swarm-%D8%A8%D8%AE%D8%B4-%DB%B1/">آموزش نصب و پیکربندی Docker Swarm</a> قصد داریم تا در مورد <a href="https://fedorafans.com/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%86%D8%B5%D8%A8-%D8%B2%D8%A8%D8%A7%D9%86-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C-node-js-%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3/">Node</a> ها صحبت کنیم.</p>
+<p><span id="more-7039"></span></p>
+<p><a href="https://fedorafans.com/wp-content/uploads/2019/10/0-docker-swarm-fedorafans.com_.png"><img loading="lazy" class="aligncenter size-full wp-image-6471" src="https://fedorafans.com/wp-content/uploads/2019/10/0-docker-swarm-fedorafans.com_.png" alt="docker-swarm" width="443" height="500" srcset="https://fedorafans.com/wp-content/uploads/2019/10/0-docker-swarm-fedorafans.com_.png 443w, https://fedorafans.com/wp-content/uploads/2019/10/0-docker-swarm-fedorafans.com_-266x300.png 266w" sizes="(max-width: 443px) 100vw, 443px" /></a></p>
+<h4>Draining a node:</h4>
+<p>زمانی که Node ها در <a href="https://fedorafans.com/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-cluster-%DA%A9%D8%B1%D8%AF%D9%86-%D8%AF%DB%8C%D8%AA%D8%A7%D8%A8%DB%8C%D8%B3-couchbase-server/">کلاستر</a> باشند وضعیت آنها Ready و AVAILABILITY آنها Active می باشد که به معنی آن می باشد که Node آماده ی دریافت task از manager node می باشد. برای بررسی وضعیت Node ها می توانید دستور زیر را بر روی manager node اجرا کنید:</p>
+<blockquote>
+<p dir="ltr" style="text-align: left;"># docker node ls</p>
+</blockquote>
+<p>در برخی مواقع اگر قصد maintenance کردن یک Node را داشته باشید می توانید وضعیت Node را به Drain تغییر دهید تا <a href="https://fedorafans.com/%D8%AF%D8%A7%D9%86%D9%84%D9%88%D8%AF-%D8%B1%D8%A7%DB%8C%DA%AF%D8%A7%D9%86-%DA%A9%D8%AA%D8%A7%D8%A8-monolith-to-microservices/">service</a> ها و یا <a href="https://fedorafans.com/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%86%D8%B5%D8%A8-docker-ce-%D8%AF%D8%B1-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3-%D9%81%D8%AF%D9%88%D8%B1%D8%A7-%DB%B3%DB%B2/">container</a> هایی که بر روی آن Node در حال اجرا می باشند به Node های دیگر در Swarm Cluster منتقل شوند.<br />
+زمانی که وضعیت Node به Drain تغییر می کند از دریافت task از manager node جلوگیری می شود.<br />
+اکنون قصد داریم به عنوان مثال وضعیت worker02 را به Drain تغییر دهیم. به همین منظور کافیست تا دستور زیر را بر روی manager node اجرا کنیم:</p>
+<pre class="brush: php; title: ; notranslate"># docker node update --availability drain docker-swarm-worker02</pre>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>یک نمونه از خروجی دستور گفته شده را در تصویر پایین مشاهده می کنید:</p>
+<p><a href="https://fedorafans.com/wp-content/uploads/2020/08/17-docker-swarm-fedorafans.com_.png"><img loading="lazy" class="aligncenter size-full wp-image-7040" src="https://fedorafans.com/wp-content/uploads/2020/08/17-docker-swarm-fedorafans.com_.png" alt="docker-swarm" width="878" height="58" srcset="https://fedorafans.com/wp-content/uploads/2020/08/17-docker-swarm-fedorafans.com_.png 878w, https://fedorafans.com/wp-content/uploads/2020/08/17-docker-swarm-fedorafans.com_-300x20.png 300w, https://fedorafans.com/wp-content/uploads/2020/08/17-docker-swarm-fedorafans.com_-768x51.png 768w" sizes="(max-width: 878px) 100vw, 878px" /></a>اکنون برای بررسی وضعیت Node های <a href="https://fedorafans.com/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%86%D8%B5%D8%A8-%D9%88-%D9%BE%DB%8C%DA%A9%D8%B1%D8%A8%D9%86%D8%AF%DB%8C-docker-swarm-%D8%A8%D8%AE%D8%B4-%DB%B2/">کلاستر</a> می توانید دستور پایین را اجرا کنید:</p>
+<blockquote>
+<p dir="ltr" style="text-align: left;"># docker node ls</p>
+</blockquote>
+<p>یک نمونه خروجی از دستور گفته شده را در تصویر پایین مشاهده می کنید:</p>
+<p><a href="https://fedorafans.com/wp-content/uploads/2020/08/18-docker-swarm-fedorafans.com_.png"><img loading="lazy" class="aligncenter size-full wp-image-7041" src="https://fedorafans.com/wp-content/uploads/2020/08/18-docker-swarm-fedorafans.com_.png" alt="docker-swarm" width="1177" height="117" srcset="https://fedorafans.com/wp-content/uploads/2020/08/18-docker-swarm-fedorafans.com_.png 1177w, https://fedorafans.com/wp-content/uploads/2020/08/18-docker-swarm-fedorafans.com_-300x30.png 300w, https://fedorafans.com/wp-content/uploads/2020/08/18-docker-swarm-fedorafans.com_-1024x102.png 1024w, https://fedorafans.com/wp-content/uploads/2020/08/18-docker-swarm-fedorafans.com_-768x76.png 768w" sizes="(max-width: 1177px) 100vw, 1177px" /></a>همانطور که در تصویر بالا مشاهده می کنید، وضعیت worker02 به Drain تغییر کرده است. در این زمان manager node پس از تغییر وضعیت Node به حالت Drain تمامی <a href="https://fedorafans.com/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%86%D8%B5%D8%A8-%D9%88-%D9%BE%DB%8C%DA%A9%D8%B1%D8%A8%D9%86%D8%AF%DB%8C-lxc-%D8%AF%D8%B1-ubuntu-14-04/">container</a> هایی که بر روی آن Node در حال اجرا بودند را بر روی Node های دیگر <a href="https://fedorafans.com/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%86%D8%B5%D8%A8-%D9%88-%D9%BE%DB%8C%DA%A9%D8%B1%D8%A8%D9%86%D8%AF%DB%8C-docker-swarm-%D8%A8%D8%AE%D8%B4-%DB%B2/">کلاستر</a> reschedule می کند.<br />
+برای برگشت وضعیت Node به حالت Active کافیست تا دستور پایین را اجرا کرد:</p>
+<pre class="brush: php; title: ; notranslate"># docker node update --availability active docker-swarm-worker02</pre>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h4>Remove a node :</h4>
+<p>برای حذف یک Node از <a href="https://fedorafans.com/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%86%D8%B5%D8%A8-%D9%88-%D9%BE%DB%8C%DA%A9%D8%B1%D8%A8%D9%86%D8%AF%DB%8C-docker-swarm-%D8%A8%D8%AE%D8%B4-%DB%B3/">Swarm Cluster</a> کافیست تا دستور زیر را بر روی Node مورد نظر خود اجرا کنید. به عنوان نمونه ما قصد داریم تا worker02 را از <a href="https://fedorafans.com/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%86%D8%B5%D8%A8-%D9%88-%D9%BE%DB%8C%DA%A9%D8%B1%D8%A8%D9%86%D8%AF%DB%8C-docker-swarm-%D8%A8%D8%AE%D8%B4-%DB%B4/">Swarm Cluster</a> حذف کنیم، به همین منظور دستور زیر را بر روی worker02 باید اجرا کرد:</p>
+<blockquote>
+<p dir="ltr" style="text-align: left;"># docker swarm leave</p>
+</blockquote>
+<p>یک نمونه از خروجی دستور گفته شده را در تصویر پایین مشاهده می کنید:</p>
+<p><a href="https://fedorafans.com/wp-content/uploads/2020/08/19-docker-swarm-fedorafans.com_.png"><img loading="lazy" class="aligncenter size-full wp-image-7042" src="https://fedorafans.com/wp-content/uploads/2020/08/19-docker-swarm-fedorafans.com_.png" alt="docker-swarm" width="521" height="62" srcset="https://fedorafans.com/wp-content/uploads/2020/08/19-docker-swarm-fedorafans.com_.png 521w, https://fedorafans.com/wp-content/uploads/2020/08/19-docker-swarm-fedorafans.com_-300x36.png 300w" sizes="(max-width: 521px) 100vw, 521px" /></a>اکنون برای بررسی وضعیت Node های <a href="https://fedorafans.com/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-cluster-%DA%A9%D8%B1%D8%AF%D9%86-%D8%AF%DB%8C%D8%AA%D8%A7%D8%A8%DB%8C%D8%B3-couchbase-server/">کلاستر</a> دستور زیر را بر روی manager node اجرا کنید:</p>
+<blockquote>
+<p dir="ltr" style="text-align: left;"># docker node ls</p>
+</blockquote>
+<p>یک نمونه خروجی از اجرای دستور گفته شده را در تصویر پایین مشاهده می کنید:</p>
+<p><a href="https://fedorafans.com/wp-content/uploads/2020/08/20-docker-swarm-fedorafans.com_.png"><img loading="lazy" class="aligncenter size-full wp-image-7043" src="https://fedorafans.com/wp-content/uploads/2020/08/20-docker-swarm-fedorafans.com_.png" alt="docker-swarm" width="1179" height="112" srcset="https://fedorafans.com/wp-content/uploads/2020/08/20-docker-swarm-fedorafans.com_.png 1179w, https://fedorafans.com/wp-content/uploads/2020/08/20-docker-swarm-fedorafans.com_-300x28.png 300w, https://fedorafans.com/wp-content/uploads/2020/08/20-docker-swarm-fedorafans.com_-1024x97.png 1024w, https://fedorafans.com/wp-content/uploads/2020/08/20-docker-swarm-fedorafans.com_-768x73.png 768w" sizes="(max-width: 1179px) 100vw, 1179px" /></a></p>
+<p>همانطور که در تصویر بالا مشاهده می کنید status آن Node به حالت Down تغییر کرده است. اکنون برای حذف آن کافیست تا دستور زیر را بر روی manager node اجرا کنید:</p>
+<blockquote>
+<p dir="ltr" style="text-align: left;"># docker node rm docker-swarm-worker02</p>
+</blockquote>
+<p>یک نمونه خروجی از اجرای دستور گفته شده را در تصویر پایین مشاهده می کنید:</p>
+<p><a href="https://fedorafans.com/wp-content/uploads/2020/08/21-docker-swarm-fedorafans.com_.png"><img loading="lazy" class="aligncenter size-full wp-image-7044" src="https://fedorafans.com/wp-content/uploads/2020/08/21-docker-swarm-fedorafans.com_.png" alt="docker-swarm" width="710" height="58" srcset="https://fedorafans.com/wp-content/uploads/2020/08/21-docker-swarm-fedorafans.com_.png 710w, https://fedorafans.com/wp-content/uploads/2020/08/21-docker-swarm-fedorafans.com_-300x25.png 300w" sizes="(max-width: 710px) 100vw, 710px" /></a></p>
+<p>اکنون برای بررسی Node های کلاستر کافیست تا یکبار دیگر دستور زیر را اجرا کنید:</p>
+<blockquote>
+<p dir="ltr" style="text-align: left;"># docker node ls</p>
+</blockquote>
+<p>یک نمونه خروجی از اجرای دستور گفته شده را در تصویر پایین مشاهده می کنید:</p>
+<p><a href="https://fedorafans.com/wp-content/uploads/2020/08/22-docker-swarm-fedorafans.com_.png"><img loading="lazy" class="aligncenter size-full wp-image-7045" src="https://fedorafans.com/wp-content/uploads/2020/08/22-docker-swarm-fedorafans.com_.png" alt="docker-swarm" width="1188" height="96" srcset="https://fedorafans.com/wp-content/uploads/2020/08/22-docker-swarm-fedorafans.com_.png 1188w, https://fedorafans.com/wp-content/uploads/2020/08/22-docker-swarm-fedorafans.com_-300x24.png 300w, https://fedorafans.com/wp-content/uploads/2020/08/22-docker-swarm-fedorafans.com_-1024x83.png 1024w, https://fedorafans.com/wp-content/uploads/2020/08/22-docker-swarm-fedorafans.com_-768x62.png 768w" sizes="(max-width: 1188px) 100vw, 1188px" /></a></p>
+<p>همانطور که در تصویر بالا مشاهده می کنید، worker02 از <a href="https://fedorafans.com/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%86%D8%B5%D8%A8-%D9%88-%D9%BE%DB%8C%DA%A9%D8%B1%D8%A8%D9%86%D8%AF%DB%8C-docker-swarm-%D8%A8%D8%AE%D8%B4-%DB%B5/">Swarm Cluster</a> حذف شد.</p>
+<p>برای برگرداندن worker02 به کلاستر کافیست تا همان دستور join را بر روی Node اجرا کرد :</p>
+<p>&nbsp;</p>
+<pre class="brush: php; title: ; notranslate"># docker swarm join --token SWMTKN-1-5s96w0psw3d23abbt9gh989hwr39sz7yuxoezwy2n5tkaduh01-273rbipslimobssdpd39j2w0p 192.168.122.245:2377</pre>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>سپس می توانید وضعیت Node های <a href="https://fedorafans.com/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D9%86%D8%B5%D8%A8-%D9%88-%D9%BE%DB%8C%DA%A9%D8%B1%D8%A8%D9%86%D8%AF%DB%8C-docker-swarm-%D8%A8%D8%AE%D8%B4-%DB%B6/">کلاستر</a> را با دستور پایین بررسی کنید:</p>
+<blockquote>
+<p dir="ltr" style="text-align: left;"># docker node ls</p>
+</blockquote>
+<p>خروجی دستورهای گفته شده را در تصاویر پایین مشاهده می کنید:</p>
+<p><a href="https://fedorafans.com/wp-content/uploads/2020/08/23-docker-swarm-fedorafans.com_.png"><img loading="lazy" class="aligncenter size-full wp-image-7046" src="https://fedorafans.com/wp-content/uploads/2020/08/23-docker-swarm-fedorafans.com_.png" alt="docker-swarm" width="1510" height="58" srcset="https://fedorafans.com/wp-content/uploads/2020/08/23-docker-swarm-fedorafans.com_.png 1510w, https://fedorafans.com/wp-content/uploads/2020/08/23-docker-swarm-fedorafans.com_-300x12.png 300w, https://fedorafans.com/wp-content/uploads/2020/08/23-docker-swarm-fedorafans.com_-1024x39.png 1024w, https://fedorafans.com/wp-content/uploads/2020/08/23-docker-swarm-fedorafans.com_-768x29.png 768w" sizes="(max-width: 1510px) 100vw, 1510px" /></a></p>
+<p><a href="https://fedorafans.com/wp-content/uploads/2020/08/24-docker-swarm-fedorafans.com_.png"><img loading="lazy" class="aligncenter size-full wp-image-7047" src="https://fedorafans.com/wp-content/uploads/2020/08/24-docker-swarm-fedorafans.com_.png" alt="docker-swarm" width="1174" height="117" srcset="https://fedorafans.com/wp-content/uploads/2020/08/24-docker-swarm-fedorafans.com_.png 1174w, https://fedorafans.com/wp-content/uploads/2020/08/24-docker-swarm-fedorafans.com_-300x30.png 300w, https://fedorafans.com/wp-content/uploads/2020/08/24-docker-swarm-fedorafans.com_-1024x102.png 1024w, https://fedorafans.com/wp-content/uploads/2020/08/24-docker-swarm-fedorafans.com_-768x77.png 768w" sizes="(max-width: 1174px) 100vw, 1174px" /></a></p>
+<p>امید است تا از این سلسله مطلب استفاده ی لازم را برده باشید.</p>
+<p>پایان</p>
+<p>&nbsp;</p>                        </div>
+                    </div>
+                                                                            <div class="article pcworms-blog-ir">
+                        <h2 class="article-title">
+                            <a href="http://pcworms.blog.ir/post/%D8%B2%D9%85%D8%A7%D9%86-%D8%A7%D8%B4%DA%A9%D8%A7%D9%84-%DB%8C%D8%A7%D8%A8%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D8%AD%D9%88%D8%A7%D8%B3%D8%AA%D9%88%D9%86-%D8%A8%D9%87-%D8%A8%D8%A7%D9%81%D8%B1-%D9%88-%D9%81%D9%84%D8%A7%D8%B4-%DA%A9%D8%B1%D8%AF%D9%86%D8%B4-%D8%A8%D8%A7%D8%B4%D9%87" title="لینک به مطلب اصلی">زمان اشکال‌یابی برنامه حواستون به بافر و فلاش کردنش باشه</a>
+                        </h2>
+                        <p class="article-info">
+                            
+                            <i class="fa fa-user" aria-hidden="true" style="color: #19B4CF !important;"
+			    > </i> نویسنده: فاروق کریمی زاده                         |  <i class="fa fa-clock-o" aria-hidden="true" style="color: #19B4CF !important;"> </i> زمان: <span id="post1596438552" class="date">03/08/2020</span>                            
+                            |
+                            
+                            <i class="fa fa-link" aria-hidden="true" style="color: #19B4CF !important;"> </i> منبع: <a href="http://pcworms.blog.ir/" class="source">کرم های کامپیوتر</a>                        </p>
+                        <div class="article-content">
+                            <div style="direction:rtl"><p>تکه کد زیر که به زبان سی‌پلاس‌پلاس را در نظر بگیرید:</p>
+<pre>#include &lt;iostream&gt;<br>using namespace std;<br><br>int main() {<br>    char *s;<br>    s = NULL;<br>    cout &lt;&lt; "Hello";<br>    *s = 'H';<br>    return 0;<br>}</pre>
+<p>انتظار داریم که اول Hello چاپ شود و سپس با توجه به اینکه میخواهیم قسمتی از حافظه که نامربوط به برنامه‌ی ماست دسترسی پیدا کنیم،باید خطای Segmentation fault داده شود و برنامه خاتمه پیدا کند.اما وقتی کد را کامپایل و اجرا می‌کنیم می‌بینیم که اینطور نیست</p>
+<a href="http://pcworms.blog.ir/post/%D8%B2%D9%85%D8%A7%D9%86-%D8%A7%D8%B4%DA%A9%D8%A7%D9%84-%DB%8C%D8%A7%D8%A8%DB%8C-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D8%AD%D9%88%D8%A7%D8%B3%D8%AA%D9%88%D9%86-%D8%A8%D9%87-%D8%A8%D8%A7%D9%81%D8%B1-%D9%88-%D9%81%D9%84%D8%A7%D8%B4-%DA%A9%D8%B1%D8%AF%D9%86%D8%B4-%D8%A8%D8%A7%D8%B4%D9%87">ادامه مطلب</a></div>                        </div>
+                    </div>
+                                        </div>
+	<div id="sidebar" class="aside">
+    <div id="sidebar-people" class="section">
+        <h2>وبلاگ‌ها (35)</h2>
+        <ul>
+                        <li>
+                <a href="http://linuxmotto.ir/blog/?feed=rss2" title="Feed"><img src="postload.php?url=http%3A%2F%2Flinuxmotto.ir%2Fblog%2F%3Ffeed%3Drss2" alt="" height="12" width="12" /></a>
+                <a href="http://linuxmotto.ir/blog" title="Website">Linuxmotto</a>
+            </li>
+                        <li>
+                <a href="http://scriptics.ir/blog/feed/" title="Feed"><img src="postload.php?url=http%3A%2F%2Fscriptics.ir%2Fblog%2Ffeed%2F" alt="" height="12" width="12" /></a>
+                <a href="http://scriptics.ir/blog" title="Website">Scriptics</a>
+            </li>
+                        <li>
+                <a href="http://use-r.ir/feed/" title="Feed"><img src="postload.php?url=http%3A%2F%2Fuse-r.ir%2Ffeed%2F" alt="" height="12" width="12" /></a>
+                <a href="http://use-r.ir" title="Website">use R</a>
+            </li>
+                        <li>
+                <a href="http://sito.ir/feed/" title="Feed"><img src="postload.php?url=http%3A%2F%2Fsito.ir%2Ffeed%2F" alt="" height="12" width="12" /></a>
+                <a href="http://sito.ir/feed/" title="Website">اخبار سیتو</a>
+            </li>
+                        <li>
+                <a href="http://feeds.feedburner.com/oshkoob " title="Feed"><img src="postload.php?url=http%3A%2F%2Ffeeds.feedburner.com%2Foshkoob+" alt="" height="12" width="12" /></a>
+                <a href="http://www.melmi.ir/blog" title="Website">اشکوب</a>
+            </li>
+                        <li>
+                <a href="http://ubuntunews.ir/feed/" title="Feed"><img src="postload.php?url=http%3A%2F%2Fubuntunews.ir%2Ffeed%2F" alt="" height="12" width="12" /></a>
+                <a href="http://ubuntunews.ir" title="Website">اوبونتو نیوز</a>
+            </li>
+                        <li>
+                <a href="https://barahouei.ir/rss" title="Feed"><img src="postload.php?url=https%3A%2F%2Fbarahouei.ir%2Frss" alt="" height="12" width="12" /></a>
+                <a href="https://barahouei.ir/" title="Website">براهوئی.آی آر</a>
+            </li>
+                        <li>
+                <a href="http://oslearn.ir/feed/" title="Feed"><img src="postload.php?url=http%3A%2F%2Foslearn.ir%2Ffeed%2F" alt="" height="12" width="12" /></a>
+                <a href="http://oslearn.ir" title="Website">تیم تخصصی او اس لرن</a>
+            </li>
+                        <li>
+                <a href="http://sae13.ir/feed" title="Feed"><img src="postload.php?url=http%3A%2F%2Fsae13.ir%2Ffeed" alt="" height="12" width="12" /></a>
+                <a href="http://sae13.ir" title="Website">درخانواده ای متدین متولدشد</a>
+            </li>
+                        <li>
+                <a href="http://salam-donya.com/feed/" title="Feed"><img src="postload.php?url=http%3A%2F%2Fsalam-donya.com%2Ffeed%2F" alt="" height="12" width="12" /></a>
+                <a href="http://salam-donya.com" title="Website">سلام دنیا | رسانه تخصصی نرم‌افزارهای آزاد / متن‌باز</a>
+            </li>
+                        <li>
+                <a href="http://lidora.blog.ir/rss/" title="Feed"><img src="postload.php?url=http%3A%2F%2Flidora.blog.ir%2Frss%2F" alt="" height="12" width="12" /></a>
+                <a href="http://lidora.blog.ir/" title="Website">صفر و یک - برنامه نویسی - لینوکس</a>
+            </li>
+                        <li>
+                <a href="http://fedorafans.com/feed/" title="Feed"><img src="postload.php?url=http%3A%2F%2Ffedorafans.com%2Ffeed%2F" alt="" height="12" width="12" /></a>
+                <a href="http://fedorafans.com" title="Website">طرفداران فدورا</a>
+            </li>
+                        <li>
+                <a href="http://molaei.org/feed" title="Feed"><img src="postload.php?url=http%3A%2F%2Fmolaei.org%2Ffeed" alt="" height="12" width="12" /></a>
+                <a href=" http://molaei.org" title="Website">علی مولایی</a>
+            </li>
+                        <li>
+                <a href="http://linuxseason.com/feed" title="Feed"><img src="postload.php?url=http%3A%2F%2Flinuxseason.com%2Ffeed" alt="" height="12" width="12" /></a>
+                <a href="http://linuxseason.com" title="Website">لینوکس سیزن</a>
+            </li>
+                        <li>
+                <a href="http://rss.linuxvaman.ir/linuxvaman" title="Feed"><img src="postload.php?url=http%3A%2F%2Frss.linuxvaman.ir%2Flinuxvaman" alt="" height="12" width="12" /></a>
+                <a href="http://linuxvaman.ir" title="Website">لینوکس و من</a>
+            </li>
+                        <li>
+                <a href="http://tuxi.ir/category/linux/feed/" title="Feed"><img src="postload.php?url=http%3A%2F%2Ftuxi.ir%2Fcategory%2Flinux%2Ffeed%2F" alt="" height="12" width="12" /></a>
+                <a href="https://tuxi.ir" title="Website">لینوکس – تاکسی</a>
+            </li>
+                        <li>
+                <a href="http://mojtaba.in/category/linux/feed/" title="Feed"><img src="postload.php?url=http%3A%2F%2Fmojtaba.in%2Fcategory%2Flinux%2Ffeed%2F" alt="" height="12" width="12" /></a>
+                <a href="http://mojtaba.in" title="Website">لینوکس – مجتبی درویشی</a>
+            </li>
+                        <li>
+                <a href="http://linuxihaa.ir/feed.xml" title="Feed"><img src="postload.php?url=http%3A%2F%2Flinuxihaa.ir%2Ffeed.xml" alt="" height="12" width="12" /></a>
+                <a href="http://linuxihaa.ir" title="Website">لینوکسی‌ها</a>
+            </li>
+                        <li>
+                <a href="https://fadavi.net/feed/" title="Feed"><img src="postload.php?url=https%3A%2F%2Ffadavi.net%2Ffeed%2F" alt="" height="12" width="12" /></a>
+                <a href="https://fadavi.net" title="Website">محمد فدوی</a>
+            </li>
+                        <li>
+                <a href="https://linuxtrainer.ir/?feed=rss2" title="Feed"><img src="postload.php?url=https%3A%2F%2Flinuxtrainer.ir%2F%3Ffeed%3Drss2" alt="" height="12" width="12" /></a>
+                <a href="https://linuxtrainer.ir" title="Website">مربی لینوکس</a>
+            </li>
+                        <li>
+                <a href="http://barzideh.blog.ir/rss/category/%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3/" title="Feed"><img src="postload.php?url=http%3A%2F%2Fbarzideh.blog.ir%2Frss%2Fcategory%2F%25D9%2584%25DB%258C%25D9%2586%25D9%2588%25DA%25A9%25D8%25B3%2F" alt="" height="12" width="12" /></a>
+                <a href="http://barzideh.blog.ir/" title="Website">میلاد برزیده</a>
+            </li>
+                        <li>
+                <a href="http://nerdnews.ir/stories.atom" title="Feed"><img src="postload.php?url=http%3A%2F%2Fnerdnews.ir%2Fstories.atom" alt="" height="12" width="12" /></a>
+                <a href="http://nerdnews.ir" title="Website">نردنیوز</a>
+            </li>
+                        <li>
+                <a href="http://soshaw.net/feed/" title="Feed"><img src="postload.php?url=http%3A%2F%2Fsoshaw.net%2Ffeed%2F" alt="" height="12" width="12" /></a>
+                <a href="http://soshaw.net/" title="Website">نوشته های یک دوستدار گنو</a>
+            </li>
+                        <li>
+                <a href="http://hexlinux.ir/feed.xml" title="Feed"><img src="postload.php?url=http%3A%2F%2Fhexlinux.ir%2Ffeed.xml" alt="" height="12" width="12" /></a>
+                <a href="https://hexlinux.ir/" title="Website">هگز! - نوشته‌های لینوکسی ...</a>
+            </li>
+                        <li>
+                <a href="http://amirsamimi.ir/feed/" title="Feed"><img src="postload.php?url=http%3A%2F%2Famirsamimi.ir%2Ffeed%2F" alt="" height="12" width="12" /></a>
+                <a href="http://amirsamimi.ir" title="Website">وبسایت شخصی علیرضا امیرصمیمی</a>
+            </li>
+                        <li>
+                <a href="http://linuxeman.mihanblog.com/post/rss/" title="Feed"><img src="postload.php?url=http%3A%2F%2Flinuxeman.mihanblog.com%2Fpost%2Frss%2F" alt="" height="12" width="12" /></a>
+                <a href="http://linuxeman.mihanblog.com" title="Website">وبلاگ تخصصی لینوکس</a>
+            </li>
+                        <li>
+                <a href="http://moghaddas.blog.ir/rss/" title="Feed"><img src="postload.php?url=http%3A%2F%2Fmoghaddas.blog.ir%2Frss%2F" alt="" height="12" width="12" /></a>
+                <a href="http://moghaddas.blog.ir/" title="Website">وبلاگ شخصی علی مقدس زاده</a>
+            </li>
+                        <li>
+                <a href="https://mehdi.wordpress.com/feed/" title="Feed"><img src="postload.php?url=https%3A%2F%2Fmehdi.wordpress.com%2Ffeed%2F" alt="" height="12" width="12" /></a>
+                <a href="https://mehdi.wordpress.com" title="Website">وبلاگ مهدی</a>
+            </li>
+                        <li>
+                <a href="http://kaliuser.blog.ir/rss" title="Feed"><img src="postload.php?url=http%3A%2F%2Fkaliuser.blog.ir%2Frss" alt="" height="12" width="12" /></a>
+                <a href="http://kaliuser.blog.ir/" title="Website">کالی یوزر</a>
+            </li>
+                        <li>
+                <a href="http://pcworms.blog.ir/rss/" title="Feed"><img src="postload.php?url=http%3A%2F%2Fpcworms.blog.ir%2Frss%2F" alt="" height="12" width="12" /></a>
+                <a href="http://pcworms.blog.ir/" title="Website">کرم های کامپیوتر</a>
+            </li>
+                        <li>
+                <a href="http://blog.aidinhut.com/feed.xml" title="Feed"><img src="postload.php?url=http%3A%2F%2Fblog.aidinhut.com%2Ffeed.xml" alt="" height="12" width="12" /></a>
+                <a href="http://www.aidinhut.com" title="Website">کلبه آیدین در دنیای مجازی</a>
+            </li>
+                        <li>
+                <a href="http://kiahamedi.ir/feed/" title="Feed"><img src="postload.php?url=http%3A%2F%2Fkiahamedi.ir%2Ffeed%2F" alt="" height="12" width="12" /></a>
+                <a href="http://kiahamedi.ir" title="Website">کیا حامدی</a>
+            </li>
+                        <li>
+                <a href="http://feeds.feedburner.com/freekeyboard" title="Feed"><img src="postload.php?url=http%3A%2F%2Ffeeds.feedburner.com%2Ffreekeyboard" alt="" height="12" width="12" /></a>
+                <a href="https://jadi.net" title="Website">کیبرد آزاد</a>
+            </li>
+                        <li>
+                <a href="http://gmozafarian.ir/feed/" title="Feed"><img src="postload.php?url=http%3A%2F%2Fgmozafarian.ir%2Ffeed%2F" alt="" height="12" width="12" /></a>
+                <a href="http://gmozafarian.ir" title="Website">گشتاسب مظفریان – GMozafarian</a>
+            </li>
+                        <li>
+                <a href="https://yeenghelabi.wordpress.com/feed/" title="Feed"><img src="postload.php?url=https%3A%2F%2Fyeenghelabi.wordpress.com%2Ffeed%2F" alt="" height="12" width="12" /></a>
+                <a href="https://yeenghelabi.wordpress.com" title="Website">یه‌انقلابی</a>
+            </li>
+                    </ul>
+        <p>
+        <img src="custom/img/opml.png" alt="feed" height="12" width="12" /> <a href="custom/people.opml">دانلود فایل OPML</a>
+        </p>
+    </div>
+    
+    <div class="section">
+        <h2>RSS</h2>
+        <ul>
+            <li><img src="custom/img/feed.png" alt="feed" height="12" width="12" />&nbsp;<a href="http://feeds.feedburner.com/linuxvaman-planet">فید سیاره</a></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>آرشیو</h2>
+        <ul>
+            <li><a href="?type=archive">نمایش همه ی عنوان‌ها</a></li>
+        </ul>
+    </div>
+</div>
+        
+                <div id="footer">
+	    <p>مطالب این سیاره تحت مجوز منابعشان قرار دارد. <a href="http://moonmoon.org/"> <i class="fa fa-moon-o" aria-hidden="true"></a></i> | <a href="http://feeds.feedburner.com/linuxvaman-planet" style="color: orange !important;"><i class="fa fa-rss" aria-hidden="true"></i></a> | <a href="http://linuxvaman.ir" style="color: white !important;"><i class="fa fa-home" aria-hidden="true"></i></a></p><a href="#" class="topbutton">	  
+
+<script>
+
+/*!
+ * topbutton
+ */
+jQuery(document).ready(function($){
+    var offset = 100;
+    var speed = 500;
+    var duration = 200;
+	   $(window).scroll(function(){
+            if ($(this).scrollTop() < offset) {
+			     $('.topbutton') .fadeOut(duration);
+            } else {
+			     $('.topbutton') .fadeIn(duration);
+            }
+        });
+	$('.topbutton').on('click', function(){
+		$('html, body').animate({scrollTop:0}, speed);
+		return false;
+		});
+});
+</script>
+  
+        </div>
+    </div>
+    
+    <script src="app/js/mm.js" type="text/javascript"></script>
+</body>
+<script src="http://file.mihanblog.com//public/user_data/user_files/269/805196/theme/jquery.js"></script> 
+<script>$(".loader-container").delay(2000).fadeOut(300);</script>
+</html>
+<!-- Load code: 0.022094964981079 --><!-- Load content: 8.3617510795593 --><!-- Display: 0.02386999130249 --><!--array(0) {
+}
+-->
